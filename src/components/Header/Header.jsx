@@ -8,7 +8,7 @@ const Header = () => {
             <a href="#">About</a>
             <a href="#">Blog</a>
             <a href="#">Portefolio</a>
-            <a href="#">Contact</a>
+            <a href="#">Contacto</a>
             <div class="animation start-home"></div>
         </nav>
         
