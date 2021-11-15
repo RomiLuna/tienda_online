@@ -1,4 +1,5 @@
 import './index.css'
+import '../CartWidget/CartWidget'
 
 const Header = () => {
     return(

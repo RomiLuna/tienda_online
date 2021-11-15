@@ -1,0 +1,29 @@
+.input-styles{
+    border :none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    outline:none ;
+}
+.dark{
+    border :none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    outline:none ;
+}
+.green1
+{
+    border :none;
+    border-bottom: 1px solid green;
+    padding: 5px;
+    margin: 5px;
+    outline:none ;
+}
+.red1{
+    border :none;
+    border-bottom: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+    outline:none ;
+}
