@@ -4,7 +4,7 @@ import Login from './components/Login/Login'
 import Input from './components/Input/Input.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 
-const productos =[
+const productos = [
     {
         name:'Torta',
         tipo:'Chocolate',
@@ -41,14 +41,16 @@ const decrementar = ()=>{
         <h1>{`El número es: ${contador}, ${fecha}` }</h1>
         <button onClick={incrementar}>+</button>
         <button onClick={decrementar}>-</button>
-        {productos.map((product) => {
+        {productos.map((product,index) => {
+            console.log(index)
             return(
-                <div key={productos.id}>
-                    <h1>{productos.name}</h1>
-                    <p>{productos.tipo}</p>
+                <div Key={product.id}>
+                    <h2>{product.name}</h2>
+                    <p>{product.tipo}</p>
                 </div>
-            )
-        })}
+                    )
+                                            })
+        }
         {/*<Login/>  
 <div>
     <Input styleClass="dark1" queTipoSoy="number"/>
