@@ -9,10 +9,10 @@ const App = () => {
         <Fragment>
         <Header/>
         <ItemListContainer  greeting="Bienvenidos"/>
-        <Login/>  
-<div>
+       {/* <Login/>  */}
+{/*<div>
     <Input styleClass="dark1" queTipoSoy="number"/>
-</div>
+</div>*/}
 
         </Fragment>
         

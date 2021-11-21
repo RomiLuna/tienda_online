@@ -1,5 +1,5 @@
 import './index.css'
-import '../CartWidget/CartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 
 const Header = () => {
     return(
@@ -11,6 +11,7 @@ const Header = () => {
             <a href="#">Portefolio</a>
             <a href="#">Contact</a>
             <div class="animation start-home"></div>
+            <CartWidget></CartWidget>
         </nav>
         
         
