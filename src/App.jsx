@@ -16,6 +16,7 @@ const decrementar = ()=>{
         <Fragment>
         <Header/>
         <ItemListContainer  greeting="Bienvenidos"/>
+        
         <h1>{`El número es: ${contador}`}</h1>
         <button onClick={incrementar}>+</button>
         <button onClick={decrementar}>-</button>
