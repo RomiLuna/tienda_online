@@ -1,4 +1,4 @@
-const producto =[
+export const producto =[
     {
         name:'Torta',
         tipo:'Chocolate',
@@ -16,3 +16,20 @@ const producto =[
      }
 
 ]
+
+const devolverProductos =() => {
+    return new Promise((resolve,reject)=>{
+        if (true){
+            setTimeout(()=>{
+                resolve ({productos.map((product) => {
+                    return(
+                        <Item Key={product.id}
+                        />
+                             )
+                                                     })
+                 })},2000)
+        }else {
+            reject('no se pudo realizar la carga')
+        }
+    })
+}

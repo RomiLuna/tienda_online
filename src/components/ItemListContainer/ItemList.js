@@ -1,21 +1,13 @@
-import listaproducto from './Item'
+import {productos} from './Item'
  
+
 function ItemList  ()  {
     
         return(
-            <Fragment>
-            
-            {productos.map((product) => {
-               return(
-                   <Item Key={product.id}
-                   />
-                        )
-                                                })
-            }
-         
-    
-            </Fragment>
-            
+                                
+                       devolverProductos()
+             
+           
     
         )
     }
