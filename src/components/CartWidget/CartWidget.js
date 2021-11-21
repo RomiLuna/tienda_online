@@ -1,4 +1,3 @@
-import './index.css'
 import carrito from '../../Imagenes/carrito.png'
 
 const  CartWidget = (props) => {
