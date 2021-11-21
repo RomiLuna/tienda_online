@@ -12,12 +12,14 @@ const incrementar = ()=>{
 const decrementar = ()=>{
     setContador(contador -1)
 }
+ 
+ let fecha = new Date()
     return(
         <Fragment>
         <Header/>
         <ItemListContainer  greeting="Bienvenidos"/>
         
-        <h1>{`El número es: ${contador}`}</h1>
+        <h1>{`El número es: ${contador}, ${fecha}` }</h1>
         <button onClick={incrementar}>+</button>
         <button onClick={decrementar}>-</button>
         {/*<Login/>  
