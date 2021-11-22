@@ -1,35 +1,9 @@
-export const producto =[
-    {
-        name:'Torta',
-        tipo:'Chocolate',
-        id:1
-     },
-     {
-        name:'Torta',
-        tipo:'Cafe',
-        id:2
-     },
-     {
-        name:'Torta',
-        tipo:'Vainilla',
-        id:3
-     }
+import	React  from 'react'
 
-]
+const Item=({item})=> {
+    return <div>
+        <img src={item.img} alt={item.alt} />
+    </div>
 
-const devolverProductos =() => {
-    return new Promise((resolve,reject)=>{
-        if (true){
-            setTimeout(()=>{
-                resolve ({productos.map((product) => {
-                    return(
-                        <Item Key={product.id}
-                        />
-                             )
-                                                     })
-                 })},2000)
-        }else {
-            reject('no se pudo realizar la carga')
-        }
-    })
 }
+export default Item;
