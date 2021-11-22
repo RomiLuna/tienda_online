@@ -1,4 +1,4 @@
-export const producto =[
+export const products =[
     {
         name:'Torta',
         tipo:'Chocolate',

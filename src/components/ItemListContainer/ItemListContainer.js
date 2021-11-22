@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import ItemList from "./ItemList";
-import {productos} from './Item';
+import { products } from './items';
+
 const  ItemListContainer  = (props) =>{
    
 
@@ -10,7 +11,7 @@ const  ItemListContainer  = (props) =>{
 
         const traerProductos = new Promise((resolve,reject) => {
           setTimeout(() => {
-                    resolve (productos);
+                    resolve (products);
                 },2000);
           
         });
