@@ -1,6 +1,5 @@
 import './index.css'
-import '../CartWidget/CartWidget'
-import CartWidget from '../CartWidget/CartWidget'
+import CartWidget from '../CartWidget/CartWidget.jsx'
 
 const Header = () => {
     return(
@@ -11,7 +10,7 @@ const Header = () => {
             <a href="#">Blog</a>
             <a href="#">Portefolio</a>
             <a href="#">Contact</a>
-            <div class="animation start-home"></div>
+            <div className="animation start-home"></div>
 
             <CartWidget></CartWidget>
         </nav>
