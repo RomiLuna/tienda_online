@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
-import ItemList from "../ItemListContainer/ItemList";
+// import ItemList from "../ItemListContainer/ItemList";
 import { products } from '../ItemListContainer/items';
+import ItemDetail from "./ItemDetail";
 
 const  ItemDetailContainer  = (props) =>{
    
@@ -24,7 +25,8 @@ const  ItemDetailContainer  = (props) =>{
 
    return(       
        <>
-            <ItemList items = {items} />
+            {/* <ItemList items = {items} /> */}
+              <ItemDetail items = {items} />
        </>
         ); 
     };
