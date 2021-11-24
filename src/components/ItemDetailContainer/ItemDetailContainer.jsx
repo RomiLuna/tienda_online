@@ -1,16 +1,15 @@
 import React,{useState,useEffect} from "react";
-import ItemList from "./ItemList.jsx";
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer.jsx";
-import { products } from './items';
+import ItemList from "../ItemListContainer/ItemList";
+import { products } from '../ItemListContainer/items';
 
-const  ItemListContainer  = (props) =>{
+const  ItemDetailContainer  = (props) =>{
    
     const [items, setItems] = useState([]); //creo una variable para guardar
  
     useEffect(() => {
         const traerProductos = new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(products);
+                resolve(products[3]);
             }, 2000);
         });
         traerProductos
@@ -25,11 +24,9 @@ const  ItemListContainer  = (props) =>{
 
    return(       
        <>
-       <h1> {props.greeting} </h1>
-       <ItemList items = {items} />
-       <button> Ver detalle Producto3</button>
+            <ItemList items = {items} />
        </>
         ); 
     };
 
-export default ItemListContainer;
+export default ItemDetailContainer;
