@@ -26,8 +26,8 @@ const  ItemListContainer  = (props) =>{
    return(       
        <>
        <h1> {props.greeting} </h1>
-       {/* <ItemList items = {items} /> */}
-       <ItemDetailContainer/>
+       <ItemList items = {items} /> 
+      { /*<ItemDetailContainer/>*/}
        </>
         ); 
     };
