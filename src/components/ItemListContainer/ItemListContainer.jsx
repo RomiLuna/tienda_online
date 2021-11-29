@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react";
 import ItemList from "./ItemList.jsx";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer.jsx";
 import { products } from './items';
+import ItemCount from "../ItemCount/ItemCount.jsx";
 
 const  ItemListContainer  = (props) =>{
    
@@ -26,6 +27,7 @@ const  ItemListContainer  = (props) =>{
    return(       
        <>
        <h1> {props.greeting} </h1>
+       <ItemCount initial={1} stock={10}/>
        <ItemList items = {items} /> 
       { /*<ItemDetailContainer/>*/}
        </>
